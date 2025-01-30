@@ -5,10 +5,3 @@ resources:
   - repository.yaml
   - release.yaml
 
-configMapGenerator:
-  - name: kube-prometheus-stack-values
-    namespace: monitoring
-    files:
-      - values.yaml=values.yaml
-configurations:
-  - kustomizeconfig.yaml
