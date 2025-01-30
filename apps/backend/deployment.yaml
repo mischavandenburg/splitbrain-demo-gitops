@@ -13,10 +13,10 @@ spec:
         app: backend
     spec:
       containers:
-      - name: backend
-        image: ghcr.io/mischavandenburg/sb-llm-demo-backend:v0.1.0
-        ports:
-        - containerPort: 8000
-        envFrom:
-        - secretRef:
-            name: llm-api-keys
+        - name: backend
+          image: ghcr.io/mischavandenburg/sb-llm-demo-backend:v0.1.0
+          ports:
+            - containerPort: 8000
+          envFrom:
+            - secretRef:
+                name: llm-api-keys

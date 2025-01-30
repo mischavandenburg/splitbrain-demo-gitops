@@ -13,7 +13,7 @@ spec:
         app: llm
     spec:
       containers:
-      - name: llm
-        image: ghcr.io/mischavandenburg/sb-llm-demo-llm:v0.1.0
-        ports:
-        - containerPort: 11434
+        - name: llm
+          image: ghcr.io/mischavandenburg/sb-llm-demo-llm:v0.1.0
+          ports:
+            - containerPort: 11434
