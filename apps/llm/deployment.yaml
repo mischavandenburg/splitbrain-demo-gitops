@@ -1,22 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
-  labels:
-    app: nginx
+  name: llm
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx
+      app: llm
   template:
     metadata:
       labels:
-        app: nginx
+        app: llm
     spec:
       containers:
-      - name: nginx
-        image: nginx:latest
+      - name: llm
+        image: ghcr.io/mischavandenburg/sb-llm-demo-llm:v0.1.0
         ports:
-        - containerPort: 80
-
+        - containerPort: 11434
