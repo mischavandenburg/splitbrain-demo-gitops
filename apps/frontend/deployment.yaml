@@ -14,10 +14,9 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: ghcr.io/mischavandenburg/sb-llm-demo-frontend:v0.2.0
+          image: ghcr.io/mischavandenburg/sb-llm-demo-frontend:v0.3.0
           ports:
             - containerPort: 80
-
           env:
-          - name: BACKEND_URL
-            value: "/api"  # This will use the nginx proxy configuration
+            - name: BACKEND_URL
+              value: "/api" # This will use the nginx proxy configuration
