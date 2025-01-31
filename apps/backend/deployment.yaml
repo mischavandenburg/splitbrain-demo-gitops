@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: ghcr.io/mischavandenburg/sb-llm-demo-backend:v0.3.2
+          image: ghcr.io/mischavandenburg/sb-llm-demo-backend:v0.3.3
           ports:
             - containerPort: 8000
           envFrom:
